@@ -1,0 +1,115 @@
+$borderColor: red;
+$itemColor: #5E5A5F;
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+}
+
+.empty {
+        visibility: hidden;
+}
+
+.required {
+        color: red;
+}
+
+.nothing-label {
+        display: flex;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.attendees-title {
+        margin-top: 20px;
+        font-size: 1.5em;
+}
+
+.attendeesgrid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.attachments-title {
+        margin-top: 20px;
+        font-size: 1.5em;
+}
+
+.attachmentsgrid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+}
+
+.attachment-item {
+        display: flex;
+        border-radius: 15px;
+        background-color: white;
+        align-items: center;
+        margin: 3px;
+}
+
+
+.attendee-icon {
+        height: 110px;
+        width: 100px;
+        margin: 10px;
+        font-size: 70px;
+}
+
+.attendee-avatar-default{
+        font-size: 70px;
+}
+
+.attendee-avatar{
+        font-size: 100%;
+        width: 70%;
+        height: 60%;
+        margin: 5px;
+}
+
+.file {
+        position:relative;
+        opacity:0;
+        z-index:99;
+        height: 0;
+}
+
+.events {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+}
+
+@import 'app';
+@import 'home';
+@import 'navbar';
+@import 'presence';
+@import 'eventbig';
+@import 'eventsmall';
+@import 'eventsummary';
+@import 'login';
+@import 'usersummary';
+@import 'eventitem';
+@import 'attachmentsummary';
+@import 'attendeeicon';
+@import 'changeuserpassword';
+@import 'createevent';
+@import 'updateuser';
+@import 'createuser';
+@import 'resetuserpassword';
+@import 'usersadmin';
+@import 'eventsadmin';
